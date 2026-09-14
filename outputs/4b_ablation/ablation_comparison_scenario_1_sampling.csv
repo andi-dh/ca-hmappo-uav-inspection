@@ -1,0 +1,5 @@
+method,guidance,capability_reward,safety_shaping,coverage_ratio,target_detection_rate,inspection_success_rate,collision_count,near_miss_count,total_energy_consumption,status
+Full CA-HMAPPO,Yes,Yes,Yes,0.747 +/- 0.106,0.644 +/- 0.270,0.588 +/- 0.304,0.100 +/- 0.308,2.250 +/- 2.149,238.69 +/- 23.72,available
+w/o Guidance,No,Yes,Yes,0.617 +/- 0.085,0.600 +/- 0.175,0.013 +/- 0.040,0.400 +/- 0.516,6.600 +/- 3.806,242.95 +/- 47.04,available
+w/o Capability Reward,Yes,No,Yes,0.748 +/- 0.068,0.787 +/- 0.145,0.000 +/- 0.000,0.000 +/- 0.000,6.700 +/- 6.617,247.25 +/- 3.61,available
+w/o Safety Shaping,Yes,Yes,No,0.442 +/- 0.274,0.338 +/- 0.339,0.062 +/- 0.121,0.500 +/- 0.527,12.200 +/- 11.526,154.84 +/- 125.62,available

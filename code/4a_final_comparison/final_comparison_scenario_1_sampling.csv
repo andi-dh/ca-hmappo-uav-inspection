@@ -1,0 +1,6 @@
+method,baseline_key,scenario,method_category,main_role,notes,coverage_ratio_mean,target_detection_rate_mean,inspection_success_rate_mean,mission_success_mean,mission_time_mean,total_energy_consumption_mean,collision_count_mean,invalid_action_count_mean
+Rule-Based V2,rule_based_v2,1,heuristic,strong heterogeneous heuristic,"fixed-wing coverage with direct quadrotor inspection",0.4374375,0.45,0.3,0.0,1000.0,141.83,0.0,0.0
+Random Masked,random_masked,1,random,valid-action random baseline,"random valid action only",0.028625,0.0125,0.0,0.0,122.8,31.1,1.0,0.0
+Homogeneous MAPPO,homogeneous_mappo_sampling,1,learning baseline,shared policy,"shared actor for all UAV types",0.5579375,0.65,0.0,0.0,803.0,164.825,0.2,0.0
+Heterogeneous MAPPO,heterogeneous_mappo_sampling,1,learning baseline,type-specific policy heads,"shared encoder with UAV-type-specific action heads",0.597125,0.6625,0.0,0.0,747.8,178.385,0.4,0.0
+CA-HMAPPO,capability_aware_mappo_sampling,1,proposed,capability-aware heterogeneous MARL,"guidance observation, capability-aware reward, and safety-aware action masking",0.7468125,0.64375,0.5875,0.05,971.65,238.6925,0.1,0.0

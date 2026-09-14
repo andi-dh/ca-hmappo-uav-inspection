@@ -1,0 +1,11 @@
+coverage_ratio,inspection_success_rate,target_detection_rate,mission_success,mission_time,total_energy_consumption,fixedwing_final_battery,quadrotor_mean_final_battery,quadrotor_min_final_battery,collision_count,near_miss_count,communication_loss_count,invalid_action_count,detected_targets,inspected_targets,candidate_targets,redundant_coverage_proxy,termination_reason,scenario,seed,baseline,evaluation_mode
+0.38,1.0,1.0,1,43,5.049999999999996,96.25000000000021,98.70000000000005,98.70000000000005,0,0,13,0,2,2,2,0.0,all_targets_inspected,0,0,homogeneous_mappo,deterministic
+0.38,1.0,1.0,1,43,5.049999999999996,96.25000000000021,98.70000000000005,98.70000000000005,0,0,13,0,2,2,2,0.0,all_targets_inspected,0,1,homogeneous_mappo,deterministic
+0.38,1.0,1.0,1,43,5.049999999999996,96.25000000000021,98.70000000000005,98.70000000000005,0,0,13,0,2,2,2,0.0,all_targets_inspected,0,2,homogeneous_mappo,deterministic
+0.38,1.0,1.0,1,43,5.049999999999996,96.25000000000021,98.70000000000005,98.70000000000005,0,0,13,0,2,2,2,0.0,all_targets_inspected,0,3,homogeneous_mappo,deterministic
+0.38,1.0,1.0,1,43,5.049999999999996,96.25000000000021,98.70000000000005,98.70000000000005,0,0,13,0,2,2,2,0.0,all_targets_inspected,0,4,homogeneous_mappo,deterministic
+0.38,1.0,1.0,1,43,5.049999999999996,96.25000000000021,98.70000000000005,98.70000000000005,0,0,13,0,2,2,2,0.0,all_targets_inspected,0,5,homogeneous_mappo,deterministic
+0.38,1.0,1.0,1,43,5.049999999999996,96.25000000000021,98.70000000000005,98.70000000000005,0,0,13,0,2,2,2,0.0,all_targets_inspected,0,6,homogeneous_mappo,deterministic
+0.38,1.0,1.0,1,43,5.049999999999996,96.25000000000021,98.70000000000005,98.70000000000005,0,0,13,0,2,2,2,0.0,all_targets_inspected,0,7,homogeneous_mappo,deterministic
+0.38,1.0,1.0,1,43,5.049999999999996,96.25000000000021,98.70000000000005,98.70000000000005,0,0,13,0,2,2,2,0.0,all_targets_inspected,0,8,homogeneous_mappo,deterministic
+0.38,1.0,1.0,1,43,5.049999999999996,96.25000000000021,98.70000000000005,98.70000000000005,0,0,13,0,2,2,2,0.0,all_targets_inspected,0,9,homogeneous_mappo,deterministic

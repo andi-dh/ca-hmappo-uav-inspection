@@ -1,0 +1,3 @@
+﻿Framework,Quadrotor_Inspector,Coverage,Detection,Inspection,Mission_Success,Collision,Invalid_Hover
+Structured sweep + assignment + timing,Rule-based,0.882,1.000,1.000,1.000,0.000,0.000
+Structured sweep + assignment + timing,Learned CA-HMAPPO actor,0.901,1.000,1.000,1.000,0.000,0.000

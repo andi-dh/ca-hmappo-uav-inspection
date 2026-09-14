@@ -1,0 +1,11 @@
+method,train_seed,coverage,detection,inspection,mission_success,collision,near_miss
+full_ca_hmappo,0,0.01008125,0.00375,0.0,0.0,0.26,5.02
+full_ca_hmappo,1,0.00825625,0.0,0.00125,0.0,0.24,5.16
+full_ca_hmappo,2,0.5935374999999999,0.5925,0.41875,0.0,0.32,4.24
+full_ca_hmappo,3,0.5508375,0.53625,0.255,0.0,0.35,4.58
+full_ca_hmappo,4,0.42909375,0.4025,0.03375,0.0,0.43,3.26
+heterogeneous_heads_only,0,0.7929437500000001,0.8225,0.0,0.0,0.0,6.79
+heterogeneous_heads_only,1,0.70721875,0.7175,0.0,0.0,0.0,0.0
+heterogeneous_heads_only,2,0.6848875,0.6875,0.0,0.0,0.11,0.94
+heterogeneous_heads_only,3,0.647625,0.655,0.0,0.0,0.17,3.36
+heterogeneous_heads_only,4,0.6266875000000001,0.64,0.0,0.0,0.2,5.42

@@ -1,0 +1,11 @@
+coverage_ratio,inspection_success_rate,target_detection_rate,mission_success,mission_time,total_energy_consumption,fixedwing_final_battery,quadrotor_mean_final_battery,quadrotor_min_final_battery,collision_count,near_miss_count,communication_loss_count,invalid_action_count,detected_targets,inspected_targets,candidate_targets,redundant_coverage_proxy,termination_reason,scenario,seed,baseline,evaluation_mode
+0.395,1.0,1.0,1,45,5.549999999999994,95.75000000000024,98.70000000000005,98.70000000000005,0,0,14,0,2,2,2,0.0,all_targets_inspected,0,0,homogeneous_mappo,sampling
+0.3825,1.0,1.0,1,40,4.999999999999996,96.30000000000021,98.70000000000005,98.70000000000005,0,0,9,0,2,2,2,0.0,all_targets_inspected,0,1,homogeneous_mappo,sampling
+0.3925,1.0,1.0,1,45,5.449999999999995,95.95000000000023,98.60000000000005,98.60000000000005,0,0,14,0,2,2,2,0.0,all_targets_inspected,0,2,homogeneous_mappo,sampling
+0.39,1.0,1.0,1,45,5.149999999999996,96.15000000000022,98.70000000000005,98.70000000000005,0,0,14,0,2,2,2,0.0,all_targets_inspected,0,3,homogeneous_mappo,sampling
+0.3675,1.0,1.0,1,40,5.099999999999996,96.20000000000022,98.70000000000005,98.70000000000005,0,0,9,0,2,2,2,0.0,all_targets_inspected,0,4,homogeneous_mappo,sampling
+0.3925,1.0,1.0,1,45,5.149999999999996,96.25000000000021,98.60000000000005,98.60000000000005,0,0,14,0,2,2,2,0.0,all_targets_inspected,0,5,homogeneous_mappo,sampling
+0.3925,1.0,1.0,1,45,5.249999999999995,96.05000000000022,98.70000000000005,98.70000000000005,0,0,15,0,2,2,2,0.0,all_targets_inspected,0,6,homogeneous_mappo,sampling
+0.36,1.0,1.0,1,39,4.949999999999997,96.35000000000021,98.70000000000005,98.70000000000005,0,0,8,0,2,2,2,0.0,all_targets_inspected,0,7,homogeneous_mappo,sampling
+0.3675,1.0,1.0,1,39,5.049999999999996,96.25000000000021,98.70000000000005,98.70000000000005,0,0,8,0,2,2,2,0.0,all_targets_inspected,0,8,homogeneous_mappo,sampling
+0.3875,1.0,1.0,1,46,5.999999999999993,95.90000000000023,98.10000000000008,98.10000000000008,0,0,15,0,2,2,2,0.0,all_targets_inspected,0,9,homogeneous_mappo,sampling

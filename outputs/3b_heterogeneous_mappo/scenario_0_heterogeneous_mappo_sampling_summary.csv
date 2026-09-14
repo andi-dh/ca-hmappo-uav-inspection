@@ -1,0 +1,11 @@
+coverage_ratio,inspection_success_rate,target_detection_rate,mission_success,mission_time,total_energy_consumption,fixedwing_final_battery,quadrotor_mean_final_battery,quadrotor_min_final_battery,collision_count,near_miss_count,communication_loss_count,invalid_action_count,detected_targets,inspected_targets,candidate_targets,redundant_coverage_proxy,termination_reason,scenario,seed,baseline,evaluation_mode
+0.38,1.0,1.0,1,42,4.849999999999996,96.80000000000018,98.35000000000005,98.35000000000005,0,0,2,0,2,2,2,0.0,all_targets_inspected,0,0,heterogeneous_mappo,sampling
+0.315,1.0,1.0,1,34,3.999999999999999,97.70000000000013,98.30000000000007,98.30000000000007,0,0,1,0,2,2,2,0.0,all_targets_inspected,0,1,heterogeneous_mappo,sampling
+0.37,1.0,1.0,1,42,4.799999999999997,96.70000000000019,98.50000000000006,98.50000000000006,0,1,3,0,2,2,2,0.0,all_targets_inspected,0,2,heterogeneous_mappo,sampling
+0.3375,1.0,1.0,1,36,3.6999999999999984,97.60000000000014,98.70000000000005,98.70000000000005,0,0,0,0,2,2,2,0.0,all_targets_inspected,0,3,heterogeneous_mappo,sampling
+0.3375,1.0,1.0,1,37,4.049999999999999,97.45000000000014,98.50000000000006,98.50000000000006,0,0,3,0,2,2,2,0.0,all_targets_inspected,0,4,heterogeneous_mappo,sampling
+0.37,1.0,1.0,1,44,5.099999999999995,96.5000000000002,98.40000000000006,98.40000000000006,0,0,5,0,2,2,2,0.0,all_targets_inspected,0,5,heterogeneous_mappo,sampling
+0.345,1.0,1.0,1,36,3.999999999999999,97.50000000000014,98.50000000000006,98.50000000000006,0,1,0,0,2,2,2,0.0,all_targets_inspected,0,6,heterogeneous_mappo,sampling
+0.3775,1.0,1.0,1,48,5.899999999999992,95.60000000000025,98.50000000000006,98.50000000000006,0,0,0,0,2,2,2,0.0,all_targets_inspected,0,7,heterogeneous_mappo,sampling
+0.3775,1.0,1.0,1,41,4.549999999999997,97.35000000000015,98.10000000000008,98.10000000000008,0,0,0,0,2,2,2,0.0,all_targets_inspected,0,8,heterogeneous_mappo,sampling
+0.3025,1.0,1.0,1,33,3.3499999999999988,97.95000000000012,98.70000000000005,98.70000000000005,0,0,0,0,2,2,2,0.0,all_targets_inspected,0,9,heterogeneous_mappo,sampling

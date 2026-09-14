@@ -1,0 +1,15 @@
+\begin{table*}[t]
+\centering
+\caption{Ablation study on Scenario 1 under sampling evaluation. Values are reported as mean $\pm$ standard deviation. Low collision or energy values should be interpreted together with inspection success, since a policy may remain safe while failing to complete inspection.}
+\label{tab:ablation_scenario_1}
+\begin{tabular}{lcccccccc}
+\hline
+Method & Guidance & Capability Reward & Safety Shaping & Coverage $\uparrow$ & Detection $\uparrow$ & Inspection $\uparrow$ & Collision $\downarrow$ & Energy $\downarrow$ \\
+\hline
+Full CA-HMAPPO & Yes & Yes & Yes & $0.747 \pm 0.106$ & $0.644 \pm 0.270$ & $0.588 \pm 0.304$ & $0.100 \pm 0.308$ & $238.69 \pm 23.72$ \\
+w/o Guidance & No & Yes & Yes & $0.617 \pm 0.085$ & $0.600 \pm 0.175$ & $0.013 \pm 0.040$ & $0.400 \pm 0.516$ & $242.95 \pm 47.04$ \\
+w/o Capability Reward & Yes & No & Yes & $0.748 \pm 0.068$ & $0.787 \pm 0.145$ & $0.000 \pm 0.000$ & $0.000 \pm 0.000$ & $247.25 \pm 3.61$ \\
+w/o Safety Shaping & Yes & Yes & No & $0.442 \pm 0.274$ & $0.338 \pm 0.339$ & $0.062 \pm 0.121$ & $0.500 \pm 0.527$ & $154.84 \pm 125.62$ \\
+\hline
+\end{tabular}
+\end{table*}

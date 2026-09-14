@@ -1,0 +1,2 @@
+coverage_ratio,target_detection_rate,inspection_success_rate,mission_success,mission_time,total_energy_consumption,collision_count,near_miss_count,detected_targets,inspected_targets,termination_reason,quadrotor_hover_inspect_count,quadrotor_valid_hover_inspect_count,quadrotor_invalid_hover_inspect_count,mean_distance_to_candidate,time_in_candidate_range
+0.624375,0.5,0.5,0,1000,202.29999999999873,0,4,4,4,max_steps_reached,873,195,678,305.22507771440536,274

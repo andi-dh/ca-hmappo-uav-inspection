@@ -1,0 +1,11 @@
+baseline,scenario,coverage_ratio_mean,inspection_success_rate_mean,target_detection_rate_mean,mission_success_mean,mission_time_mean,total_energy_consumption_mean,collision_count_mean,invalid_action_count_mean,quadrotor_invalid_hover_inspect_count_mean
+rule_based_v2,1,0.43743750000000003,0.3,0.45,0.0,1000.0,141.82999999999936,0.0,0.0,
+random_masked,1,0.028625,0.0,0.0125,0.0,122.8,31.099999999999728,1.0,0.0,
+homogeneous_mappo_sampling,1,0.5579375,0.0,0.65,0.0,803.0,164.82499999999817,0.2,0.0,
+heterogeneous_mappo_sampling,1,0.597125,0.0,0.6625,0.0,747.8,178.3849999999977,0.4,0.0,
+capability_aware_mappo_sampling,1,0.7468125,0.5875,0.64375,0.05,971.65,238.6924999999978,0.1,0.0,127.3
+happo_capability_aware_sampling,1,0.7056250000000001,0.075,0.7125,0.0,920.4,261.100000000001,0.2,0.0,21.3
+happo_assignment_aware_sampling,1,0.623625,0.6,0.6625,0.0,709.4,148.20999999999896,0.6,0.0,0.0
+hatrpo_capability_aware_sampling,1,0.4974375,0.0,0.45,0.0,851.1,234.16500000000008,0.2,0.0,0.0
+hatrpo_assignment_aware_sampling,1,0.270875,0.0125,0.2875,0.0,780.9,212.28499999999988,0.3,0.0,0.0
+hierarchical_task_allocation,1,0.832625,0.9,0.9,0.4,812.7,147.8599999999995,0.0,0.0,0.0

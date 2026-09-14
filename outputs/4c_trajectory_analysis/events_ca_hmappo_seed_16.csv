@@ -1,0 +1,13 @@
+step,event_type,target_id,x,y,agent_id
+120,target_detected,0,1120.450309982857,875.339461882334,fixedwing_0
+205,target_inspected,0,1120.450309982857,875.339461882334,quadrotor_0
+318,target_detected,7,1825.5408959159565,1872.972977949906,fixedwing_0
+413,target_inspected,3,1674.3382803019679,1637.289156748496,quadrotor_0
+451,target_inspected,7,1825.5408959159565,1872.972977949906,quadrotor_0
+510,near_miss,,,,
+516,target_detected,3,1674.3382803019679,1637.289156748496,fixedwing_0
+575,target_detected,2,1218.7162690852228,138.97900572887892,fixedwing_0
+792,near_miss,,,,
+795,near_miss,,,,
+796,near_miss,,,,
+861,target_inspected,2,1218.7162690852228,138.97900572887892,quadrotor_0

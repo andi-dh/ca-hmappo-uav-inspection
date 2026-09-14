@@ -1,0 +1,6 @@
+baseline,scenario,coverage_ratio_mean,inspection_success_rate_mean,target_detection_rate_mean,mission_success_mean,mission_time_mean,total_energy_consumption_mean,collision_count_mean,invalid_action_count_mean
+rule_based_v2,1,0.43743750000000003,0.3,0.45,0.0,1000.0,141.82999999999936,0.0,0.0
+random_masked,1,0.028625,0.0,0.0125,0.0,122.8,31.099999999999728,1.0,0.0
+homogeneous_mappo_sampling,1,0.5579375,0.0,0.65,0.0,803.0,164.82499999999817,0.2,0.0
+heterogeneous_mappo_sampling,1,0.597125,0.0,0.6625,0.0,747.8,178.3849999999977,0.4,0.0
+capability_aware_mappo_sampling,1,0.7468125,0.5875,0.64375,0.05,971.65,238.6924999999978,0.1,0.0

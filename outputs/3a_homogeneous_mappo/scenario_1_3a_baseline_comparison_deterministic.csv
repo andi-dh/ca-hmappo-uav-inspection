@@ -1,0 +1,4 @@
+baseline,scenario,coverage_ratio_mean,inspection_success_rate_mean,target_detection_rate_mean,mission_success_mean,mission_time_mean,total_energy_consumption_mean,collision_count_mean,invalid_action_count_mean
+rule_based_v2,1,0.43743750000000003,0.3,0.45,0.0,1000.0,141.82999999999936,0.0,0.0
+random_masked,1,0.028625,0.0,0.0125,0.0,122.8,31.099999999999728,1.0,0.0
+homogeneous_mappo_deterministic,1,0.1925,0.0,0.2,0.0,1000.0,73.69999999999861,0.0,0.0

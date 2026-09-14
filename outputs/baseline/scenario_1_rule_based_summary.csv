@@ -1,0 +1,11 @@
+coverage_ratio,inspection_success_rate,mission_time,total_energy_consumption,collision_count,near_miss_count,communication_loss_count,invalid_action_count,detected_targets,inspected_targets,candidate_targets,redundant_coverage_proxy,termination_reason,scenario,seed
+0.450625,0.125,841,288.3500000000075,0,0,682,0,3,1,9,0.7142290923503766,all_available_uavs_returned,1,0
+0.46875,0.125,838,288.300000000008,0,0,986,0,4,1,11,0.7016706443914081,all_available_uavs_returned,1,1
+0.18625,0.125,739,288.2500000000077,0,1,642,0,1,1,7,0.8655841226883175,all_available_uavs_returned,1,2
+0.3,0.0,775,288.25000000000625,0,0,821,0,0,0,4,0.7935483870967742,all_available_uavs_returned,1,3
+0.690625,0.125,884,288.3000000000072,0,0,1152,0,6,1,13,0.5833333333333334,all_available_uavs_returned,1,4
+0.1225,0.0,739,288.3500000000071,0,0,656,0,2,0,7,0.9115922417681551,all_available_uavs_returned,1,5
+0.33125,0.25,759,288.25000000000813,0,1,695,0,4,2,8,0.7672375933245499,all_available_uavs_returned,1,6
+0.545625,0.0,876,288.3000000000083,0,0,732,0,5,0,10,0.6678082191780822,all_available_uavs_returned,1,7
+0.16375,0.25,740,288.3000000000076,0,0,645,0,3,2,6,0.881981981981982,all_available_uavs_returned,1,8
+0.1225,0.125,723,288.2500000000075,0,0,647,0,2,1,5,0.9096357768556939,all_available_uavs_returned,1,9
