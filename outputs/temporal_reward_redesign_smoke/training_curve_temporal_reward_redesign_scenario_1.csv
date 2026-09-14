@@ -1,3 +1,0 @@
-update,episode_count,rollout_reward_mean,coverage_ratio,target_detection_rate,inspection_success_rate,mission_success,collision_count,invalid_action_count,policy_loss,value_loss,entropy
-1,0,2.8959739726560656,0.046875,0.125,0.0,0,0,0,-0.02986018918454647,940.3206787109375,1.6654677391052246
-2,0,-0.10529258893802762,0.0475,0.125,0.0,0,0,0,-0.012821887619793415,5.099281311035156,1.5559262037277222

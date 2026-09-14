@@ -1,3 +1,0 @@
-update,scenario,env_mode,rollout_reward_mean,episode_count,coverage_ratio,inspection_success_rate,target_detection_rate,mission_success,mission_time,collision_count,invalid_action_count,policy_loss,value_loss,entropy,approx_kl,accepted_fraction,step_norm,accepted
-1,0,capability_aware,2.2030092258937657,0,0.0525,0.5,1.0,0,32,0,0,-0.10221744328737259,311.52410888671875,1.783652901649475,0.017008481547236443,1.0,0.24451567232608795,1.0
-2,0,capability_aware,-0.141207278938964,0,0.115,0.5,1.0,0,64,0,0,-0.08569756150245667,7.101080417633057,1.7725714445114136,-0.041842155158519745,1.0,0.19630582630634308,1.0

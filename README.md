@@ -10,11 +10,42 @@ The repository includes training and evaluation code, trained checkpoints, raw a
 
 ## Repository Structure
 
-- `code/` — simulator, training/evaluation scripts, ablations, baselines, and trajectory analysis
-- `models/` — trained checkpoints for CA-HMAPPO and comparison methods
-- `outputs/` — evaluation CSV files, diagnostics, and processed results
-- `requirements.txt` — Python package versions
-- `.gitignore` — standard Python/LaTeX ignore patterns
+```
+ca-hmappo/
+├── code/
+│   ├── simulation_environment/    # UAV mission simulator and base environment
+│   ├── homogeneous_mappo/         # Homogeneous MAPPO baseline
+│   ├── heterogeneous_mappo/       # Heterogeneous MAPPO baseline
+│   ├── ca_hmappo/                 # CA-HMAPPO training and evaluation
+│   ├── controlled_analysis/       # Ablation experiments (G, CR, S factors)
+│   ├── trajectory_analysis/       # Single-episode trajectory diagnostics
+│   ├── temporal_constrained_variant/  # Temporal reward redesign
+│   └── extended_evaluations/      # Additional baselines and sensitivity tests
+├── models/
+│   ├── homogeneous_mappo/
+│   ├── heterogeneous_mappo/
+│   ├── ca_hmappo/                 # Original terminal 3000-update checkpoint
+│   ├── controlled_analysis/       # Ablation checkpoints
+│   ├── training_seed_robustness/  # Independent training seeds 0–4
+│   ├── temporal_constrained_variant/
+│   └── extended_evaluations/
+├── outputs/
+│   ├── main_benchmark/            # Primary evaluation results
+│   ├── rule_based_baselines/
+│   ├── homogeneous_mappo/
+│   ├── heterogeneous_mappo/
+│   ├── ca_hmappo/
+│   ├── controlled_analysis/
+│   ├── training_seed_robustness/
+│   ├── candidate_robustness/      # Localization noise and missed-report tests
+│   ├── temporal_constrained_variant/
+│   ├── extended_evaluations/
+│   ├── hybrid_sweep/              # Structured sweep diagnostic
+│   └── trajectory_analysis/
+├── requirements.txt
+├── .gitignore
+└── README.md
+```
 
 ## Installation
 
@@ -37,58 +68,56 @@ GPU is recommended but not required for evaluation.
 The original Scenario 1 results reported in the manuscript use the terminal checkpoint from the 3000-update CA-HMAPPO training run:
 
 ```
-models/3c_capability_aware_mappo/capability_aware_mappo_scenario_1.pt
+models/ca_hmappo/capability_aware_mappo_scenario_1.pt
 ```
 
-This checkpoint is tensor-identical to `models/3c_capability_aware_mappo/capability_aware_mappo_scenario_1_update_3000.pt`.
+This checkpoint is tensor-identical to `models/ca_hmappo/capability_aware_mappo_scenario_1_update_3000.pt`.
 
 **The reported checkpoint was not selected using a best-checkpoint criterion.**
-
-Checkpoints under `models/3c_capability_aware_mappo_safety_ft/` were produced during safety-focused fine-tuning experiments and are retained for reference, but are not the baseline checkpoint used in the main reported results.
 
 ## Running the Main Evaluation
 
 Evaluate the main CA-HMAPPO checkpoint on 20 environment seeds:
 
 ```bash
-python code/python_3c_capability_aware_mappo/evaluate_capability_aware_mappo.py \
-  --scenario 1 --model models/3c_capability_aware_mappo/capability_aware_mappo_scenario_1.pt \
+python code/ca_hmappo/evaluate_capability_aware_mappo.py \
+  --scenario 1 --model models/ca_hmappo/capability_aware_mappo_scenario_1.pt \
   --num-seeds 20 --base-seed 0 --device cuda \
-  --output-dir outputs/3c_capability_aware_mappo
+  --output-dir outputs/ca_hmappo
 ```
 
 Generate detailed diagnostics for seed 16:
 
 ```bash
-python code/python_4c_trajectory_analysis/generate_trajectory_rollout.py \
-  --scenario 1 --seed 16 --model models/3c_capability_aware_mappo/capability_aware_mappo_scenario_1.pt \
-  --device cuda --output-dir outputs/4c_trajectory_analysis
+python code/trajectory_analysis/generate_trajectory_rollout.py \
+  --scenario 1 --seed 16 --model models/ca_hmappo/capability_aware_mappo_scenario_1.pt \
+  --device cuda --output-dir outputs/trajectory_analysis
 
-python code/python_4c_trajectory_analysis/plot_trajectory_analysis.py \
-  --seed 16 --output-dir outputs/4c_trajectory_analysis
+python code/trajectory_analysis/plot_trajectory_analysis.py \
+  --seed 16 --output-dir outputs/trajectory_analysis
 
-python code/python_4c_trajectory_analysis/build_qualitative_summary.py \
-  --seed 16 --output-dir outputs/4c_trajectory_analysis
+python code/trajectory_analysis/build_qualitative_summary.py \
+  --seed 16 --output-dir outputs/trajectory_analysis
 ```
 
 ## Controlled Contribution Analysis
 
-The controlled ablation experiments test the individual contributions of candidate guidance (G), capability-aware reward (CR), and safety mechanisms (S). Trained checkpoints are available under `models/4b_ablation/`. Evaluation outputs are under `outputs/4b_ablation/`.
+The controlled ablation experiments test the individual contributions of candidate guidance (G), capability-aware reward (CR), and safety mechanisms (S). Trained checkpoints are available under `models/controlled_analysis/`. Evaluation outputs are under `outputs/controlled_analysis/`.
 
-Evaluate individual ablation checkpoints using:
+Evaluate individual controlled variants using:
 
 ```bash
-python code/python_4b_ablation/evaluate_ablation_mappo.py \
-  --scenario 1 --model models/4b_ablation/[checkpoint_path] \
+python code/controlled_analysis/evaluate_controlled_variants.py \
+  --scenario 1 --model models/controlled_analysis/[checkpoint_path] \
   --num-seeds 20 --device cuda \
-  --output-dir outputs/4b_ablation
+  --output-dir outputs/controlled_analysis
 ```
 
-Replace `[checkpoint_path]` with the specific ablation variant checkpoint (e.g., G0_CR0_S0, G1_CR1_S1, etc.).
+Replace `[checkpoint_path]` with the specific variant checkpoint (e.g., G0_CR0_S0, G1_CR1_S1, etc.).
 
 ## Training-Seed Robustness Evaluation
 
-Independent training-seed robustness experiments use training seeds 0–4. Checkpoints are stored under `models/4b_ablation/robustness_v2/seed_0` through `seed_4`. Aggregated and raw evaluation results are provided under `outputs/robustness_eval/`. Each checkpoint is evaluated on 20 environment seeds with 5 action-sampling seeds per environment seed (100 stochastic episodes per checkpoint).
+Independent training-seed robustness experiments use training seeds 0–4. Checkpoints are stored under `models/training_seed_robustness/seed_0` through `seed_4`. Aggregated and raw evaluation results are provided under `outputs/training_seed_robustness/`. Each checkpoint is evaluated on 20 environment seeds with 5 action-sampling seeds per environment seed (100 stochastic episodes per checkpoint).
 
 ## Candidate-Information Robustness
 
@@ -96,7 +125,7 @@ Zero-shot robustness under localization noise and missed-report conditions is ev
 
 ## Hybrid Sweep and Rule-Based Inspector Control
 
-The hybrid sweep and matched rule-based quadrotor inspector controls are implemented in `code/python_rev_reviewer_baselines/`, particularly `evaluate_sweep_assisted_actor.py` and `evaluate_sweep_rulebased_quad.py`. Their comparison outputs are included with the reviewer-baseline results.
+The hybrid sweep and matched rule-based quadrotor inspector controls are implemented in `code/extended_evaluations/`, particularly `evaluate_sweep_assisted_actor.py` and `evaluate_sweep_rulebased_quad.py`. Evaluation outputs are under `outputs/hybrid_sweep/`.
 
 ## Reproducibility Notes
 

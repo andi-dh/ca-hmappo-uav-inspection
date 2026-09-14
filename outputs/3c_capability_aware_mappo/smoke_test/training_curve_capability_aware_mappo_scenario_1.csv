@@ -1,3 +1,0 @@
-update,scenario,rollout_reward_mean,episode_count,coverage_ratio,inspection_success_rate,target_detection_rate,mission_success,mission_time,collision_count,invalid_action_count,policy_loss,value_loss,entropy,approx_kl,clip_fraction,mean_action_probability
-1,1,3.024478384759277,0,0.01375,0.0,0.125,0,16,0,0,4.221995908437748e-08,532.095947265625,1.7884706258773804,4.967053879312289e-09,0.0,0.1685495376586914
-2,1,0.04708895646035671,0,0.014375,0.0,0.125,0,32,0,0,2.110997954218874e-08,1.7019580602645874,1.7876005172729492,-1.4901161193847656e-08,0.0,0.16807053983211517
