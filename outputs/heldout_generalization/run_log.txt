@@ -1,0 +1,361 @@
+Using device: cuda
+Loaded checkpoint for training seed 0
+Loaded checkpoint for training seed 1
+Loaded checkpoint for training seed 2
+Loaded checkpoint for training seed 3
+Loaded checkpoint for training seed 4
+
+================================================================================
+Starting held-out generalization evaluation
+  5 training seeds x 10 conditions x 20 env seeds x 5 action seeds
+  = 5000 total episodes
+  Environment seeds: 0..19
+  Action seeds: 100..104
+  Deterministic: False
+================================================================================
+
+
+============================================================
+Condition: nominal
+============================================================
+
+  Training seed 0:
+    Completed 5/20 environment seeds
+    Completed 10/20 environment seeds
+    Completed 15/20 environment seeds
+    Completed 20/20 environment seeds
+
+  Training seed 1:
+    Completed 5/20 environment seeds
+    Completed 10/20 environment seeds
+    Completed 15/20 environment seeds
+    Completed 20/20 environment seeds
+
+  Training seed 2:
+    Completed 5/20 environment seeds
+    Completed 10/20 environment seeds
+    Completed 15/20 environment seeds
+    Completed 20/20 environment seeds
+
+  Training seed 3:
+    Completed 5/20 environment seeds
+    Completed 10/20 environment seeds
+    Completed 15/20 environment seeds
+    Completed 20/20 environment seeds
+
+  Training seed 4:
+    Completed 5/20 environment seeds
+    Completed 10/20 environment seeds
+    Completed 15/20 environment seeds
+    Completed 20/20 environment seeds
+
+============================================================
+Condition: clustered_targets
+============================================================
+
+  Training seed 0:
+    Completed 5/20 environment seeds
+    Completed 10/20 environment seeds
+    Completed 15/20 environment seeds
+    Completed 20/20 environment seeds
+
+  Training seed 1:
+    Completed 5/20 environment seeds
+    Completed 10/20 environment seeds
+    Completed 15/20 environment seeds
+    Completed 20/20 environment seeds
+
+  Training seed 2:
+    Completed 5/20 environment seeds
+    Completed 10/20 environment seeds
+    Completed 15/20 environment seeds
+    Completed 20/20 environment seeds
+
+  Training seed 3:
+    Completed 5/20 environment seeds
+    Completed 10/20 environment seeds
+    Completed 15/20 environment seeds
+    Completed 20/20 environment seeds
+
+  Training seed 4:
+    Completed 5/20 environment seeds
+    Completed 10/20 environment seeds
+    Completed 15/20 environment seeds
+    Completed 20/20 environment seeds
+
+============================================================
+Condition: edge_targets
+============================================================
+
+  Training seed 0:
+    Completed 5/20 environment seeds
+    Completed 10/20 environment seeds
+    Completed 15/20 environment seeds
+    Completed 20/20 environment seeds
+
+  Training seed 1:
+    Completed 5/20 environment seeds
+    Completed 10/20 environment seeds
+    Completed 15/20 environment seeds
+    Completed 20/20 environment seeds
+
+  Training seed 2:
+    Completed 5/20 environment seeds
+    Completed 10/20 environment seeds
+    Completed 15/20 environment seeds
+    Completed 20/20 environment seeds
+
+  Training seed 3:
+    Completed 5/20 environment seeds
+    Completed 10/20 environment seeds
+    Completed 15/20 environment seeds
+    Completed 20/20 environment seeds
+
+  Training seed 4:
+    Completed 5/20 environment seeds
+    Completed 10/20 environment seeds
+    Completed 15/20 environment seeds
+    Completed 20/20 environment seeds
+
+============================================================
+Condition: sensing_moderate
+============================================================
+
+  Training seed 0:
+    Completed 5/20 environment seeds
+    Completed 10/20 environment seeds
+    Completed 15/20 environment seeds
+    Completed 20/20 environment seeds
+
+  Training seed 1:
+    Completed 5/20 environment seeds
+    Completed 10/20 environment seeds
+    Completed 15/20 environment seeds
+    Completed 20/20 environment seeds
+
+  Training seed 2:
+    Completed 5/20 environment seeds
+    Completed 10/20 environment seeds
+    Completed 15/20 environment seeds
+    Completed 20/20 environment seeds
+
+  Training seed 3:
+    Completed 5/20 environment seeds
+    Completed 10/20 environment seeds
+    Completed 15/20 environment seeds
+    Completed 20/20 environment seeds
+
+  Training seed 4:
+    Completed 5/20 environment seeds
+    Completed 10/20 environment seeds
+    Completed 15/20 environment seeds
+    Completed 20/20 environment seeds
+
+============================================================
+Condition: sensing_severe
+============================================================
+
+  Training seed 0:
+    Completed 5/20 environment seeds
+    Completed 10/20 environment seeds
+    Completed 15/20 environment seeds
+    Completed 20/20 environment seeds
+
+  Training seed 1:
+    Completed 5/20 environment seeds
+    Completed 10/20 environment seeds
+    Completed 15/20 environment seeds
+    Completed 20/20 environment seeds
+
+  Training seed 2:
+    Completed 5/20 environment seeds
+    Completed 10/20 environment seeds
+    Completed 15/20 environment seeds
+    Completed 20/20 environment seeds
+
+  Training seed 3:
+    Completed 5/20 environment seeds
+    Completed 10/20 environment seeds
+    Completed 15/20 environment seeds
+    Completed 20/20 environment seeds
+
+  Training seed 4:
+    Completed 5/20 environment seeds
+    Completed 10/20 environment seeds
+    Completed 15/20 environment seeds
+    Completed 20/20 environment seeds
+
+============================================================
+Condition: hard_comm_800
+============================================================
+
+  Training seed 0:
+    Completed 5/20 environment seeds
+    Completed 10/20 environment seeds
+    Completed 15/20 environment seeds
+    Completed 20/20 environment seeds
+
+  Training seed 1:
+    Completed 5/20 environment seeds
+    Completed 10/20 environment seeds
+    Completed 15/20 environment seeds
+    Completed 20/20 environment seeds
+
+  Training seed 2:
+    Completed 5/20 environment seeds
+    Completed 10/20 environment seeds
+    Completed 15/20 environment seeds
+    Completed 20/20 environment seeds
+
+  Training seed 3:
+    Completed 5/20 environment seeds
+    Completed 10/20 environment seeds
+    Completed 15/20 environment seeds
+    Completed 20/20 environment seeds
+
+  Training seed 4:
+    Completed 5/20 environment seeds
+    Completed 10/20 environment seeds
+    Completed 15/20 environment seeds
+    Completed 20/20 environment seeds
+
+============================================================
+Condition: hard_comm_400
+============================================================
+
+  Training seed 0:
+    Completed 5/20 environment seeds
+    Completed 10/20 environment seeds
+    Completed 15/20 environment seeds
+    Completed 20/20 environment seeds
+
+  Training seed 1:
+    Completed 5/20 environment seeds
+    Completed 10/20 environment seeds
+    Completed 15/20 environment seeds
+    Completed 20/20 environment seeds
+
+  Training seed 2:
+    Completed 5/20 environment seeds
+    Completed 10/20 environment seeds
+    Completed 15/20 environment seeds
+    Completed 20/20 environment seeds
+
+  Training seed 3:
+    Completed 5/20 environment seeds
+    Completed 10/20 environment seeds
+    Completed 15/20 environment seeds
+    Completed 20/20 environment seeds
+
+  Training seed 4:
+    Completed 5/20 environment seeds
+    Completed 10/20 environment seeds
+    Completed 15/20 environment seeds
+    Completed 20/20 environment seeds
+
+============================================================
+Condition: slower_motion
+============================================================
+
+  Training seed 0:
+    Completed 5/20 environment seeds
+    Completed 10/20 environment seeds
+    Completed 15/20 environment seeds
+    Completed 20/20 environment seeds
+
+  Training seed 1:
+    Completed 5/20 environment seeds
+    Completed 10/20 environment seeds
+    Completed 15/20 environment seeds
+    Completed 20/20 environment seeds
+
+  Training seed 2:
+    Completed 5/20 environment seeds
+    Completed 10/20 environment seeds
+    Completed 15/20 environment seeds
+    Completed 20/20 environment seeds
+
+  Training seed 3:
+    Completed 5/20 environment seeds
+    Completed 10/20 environment seeds
+    Completed 15/20 environment seeds
+    Completed 20/20 environment seeds
+
+  Training seed 4:
+    Completed 5/20 environment seeds
+    Completed 10/20 environment seeds
+    Completed 15/20 environment seeds
+    Completed 20/20 environment seeds
+
+============================================================
+Condition: faster_motion
+============================================================
+
+  Training seed 0:
+    Completed 5/20 environment seeds
+    Completed 10/20 environment seeds
+    Completed 15/20 environment seeds
+    Completed 20/20 environment seeds
+
+  Training seed 1:
+    Completed 5/20 environment seeds
+    Completed 10/20 environment seeds
+    Completed 15/20 environment seeds
+    Completed 20/20 environment seeds
+
+  Training seed 2:
+    Completed 5/20 environment seeds
+    Completed 10/20 environment seeds
+    Completed 15/20 environment seeds
+    Completed 20/20 environment seeds
+
+  Training seed 3:
+    Completed 5/20 environment seeds
+    Completed 10/20 environment seeds
+    Completed 15/20 environment seeds
+    Completed 20/20 environment seeds
+
+  Training seed 4:
+    Completed 5/20 environment seeds
+    Completed 10/20 environment seeds
+    Completed 15/20 environment seeds
+    Completed 20/20 environment seeds
+
+============================================================
+Condition: scenario_2
+============================================================
+
+  Training seed 0:
+    Completed 5/20 environment seeds
+    Completed 10/20 environment seeds
+    Completed 15/20 environment seeds
+    Completed 20/20 environment seeds
+
+  Training seed 1:
+    Completed 5/20 environment seeds
+    Completed 10/20 environment seeds
+    Completed 15/20 environment seeds
+    Completed 20/20 environment seeds
+
+  Training seed 2:
+    Completed 5/20 environment seeds
+    Completed 10/20 environment seeds
+    Completed 15/20 environment seeds
+    Completed 20/20 environment seeds
+
+  Training seed 3:
+    Completed 5/20 environment seeds
+    Completed 10/20 environment seeds
+    Completed 15/20 environment seeds
+    Completed 20/20 environment seeds
+
+  Training seed 4:
+    Completed 5/20 environment seeds
+    Completed 10/20 environment seeds
+    Completed 15/20 environment seeds
+    Completed 20/20 environment seeds
+
+================================================================================
+Saved raw results (5000 episodes): outputs\heldout_generalization_v2\raw_generalization_results.csv
+================================================================================
+
